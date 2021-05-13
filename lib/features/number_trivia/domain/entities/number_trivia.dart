@@ -7,6 +7,9 @@ class NumberTrivia extends Equatable {
   final String text;
   final int number;
 
-  NumberTrivia({@required this.text, @required this.number})
-      : super([text, number]); // super is used for equatable to compare objects
+  NumberTrivia({@required this.text, @required this.number}) : super();
+
+  @override
+  // TODO: implement props
+  List<Object> get props => [text, number];
 }
